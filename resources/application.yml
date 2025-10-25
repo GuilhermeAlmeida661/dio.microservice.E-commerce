@@ -1,13 +1,12 @@
 server:
     servlet:
-      context-path: /storefront
-    port: 8081
+      context-path: /warehouse
 spring:
   application:
-    name: storefront
+    name: warehouse
 
   datasource:
-    url: jdbc:h2:mem:storefront
+    url: jdbc:h2:mem:warehouse
     driver-class-name: org.h2.Driver
     username: sa
     password:
@@ -24,11 +23,16 @@ spring:
         web-allow-others: true
   rabbitmq:
     host: rabbitmq 
-    port: 5673
-    username: guest
-    password: guest
+    port: 5672
+    username: admin
+    password: admin
     virtual-host: /
     queue:
-      product-change-availability: product.change.availability.queue
-warehouse:
-    base-path: http://warehouseapp:8080/warehouse
+        product-change-availability: product.change.availability.queue
+    exchange:
+        product-change-availability: product.change.availability.exchange
+    routing-key:
+        product-change-availability: product.change.availability.routing.key
+
+storefront:
+    base-path: http://storefrontapp:8081/storefront

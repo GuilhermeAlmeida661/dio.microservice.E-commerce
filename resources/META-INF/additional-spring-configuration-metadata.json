@@ -1,12 +1,24 @@
-{"properties": [
-  {
-    "name": "spring.rabbitmq.queue.product-change-availability",
-    "type": "java.lang.String",
-    "description": "A description for 'spring.rabbitmq.queue.product-change-availability'"
-  },
-  {
-    "name": "warehouse.base-path",
-    "type": "java.lang.String",
-    "description": "A description for 'warehouse.base-path'"
-  }
-]}
+{
+  "properties": [
+    {
+      "name": "storefront.base-path",
+      "type": "java.lang.String",
+      "description": "A description for 'storefront.base-path'"
+    },
+    {
+      "name": "spring.rabbitmq.routing-key.product-change-availability",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.rabbitmq.routing-key.product-change-availability'"
+    },
+    {
+      "name": "spring.rabbitmq.exchange.product-change-availability",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.rabbitmq.exchange.product-change-availability'"
+    },
+    {
+      "name": "spring.rabbitmq.queue.product-change-availability",
+      "type": "java.lang.String",
+      "description": "A description for 'spring.rabbitmq.queue.product-change-availability'"
+    }
+  ]
+}
