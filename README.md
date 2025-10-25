@@ -116,6 +116,7 @@ Adicionar testes automatizados com JUnit 5 e Testcontainers.
 Criar uma documentação mais visual da arquitetura.
 
 Desenvolvido por Guilherme Almeida
+
 💬 Projeto criado com fins de aprendizado e prática de microsserviços.
 
 “Cada projeto é uma nova linha no código da minha evolução como desenvolvedor.”
